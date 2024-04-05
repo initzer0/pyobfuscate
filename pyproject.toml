@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools >= 40.9.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pyobfuscate"
+dependencies = []
+requires-python = ">=3.8"
+authors = [{ name = "init-0" }]
+maintainers = [{ name = "init-0" }]
+description = "Automatic hyperparameter tuning for statistical"
+dynamic = ["version", "readme"]
+license = { file = "LICENSE" }
+keywords = ["obfuscation"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Programming Language :: Python",
+]
+
+[tool.setuptools.dynamic]
+version = { attr = "pyobfuscate.VERSION" }
+readme = { file = ["README.md"] }
